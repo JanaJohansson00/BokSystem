@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace BokSystem
 {
-    internal class E_bok
+    public class E_bok : BookClass
     {
+        public double FileSize { get; set; }
+        public string DownloadUrl { get; set; }
+
+        public E_bok (double fileSize, string downloadUrl)
+            :base(string title, string author, int isbn)
+        {
+            FileSize = FileSize;
+            DownloadUrl = downloadUrl;
+        }
+    }
+
+    public override WriteBookInfo()
+    {
+        Console.WriteLine($"Titel: {Title}, Författare: {Author}, ISBN-nummer: {Isbn},FilStorlek: {FileSize} DownloadUrl: {DownloadUrl} ");
     }
 }
