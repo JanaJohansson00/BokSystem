@@ -9,6 +9,5 @@ namespace BokSystem
     public class BookClass
     {
         public int Name { get; set; }
-
     }
 }
