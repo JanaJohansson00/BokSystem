@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BokSystem
 {
-    internal class BookClass
+    public class BookClass
     {
+        public int Name { get; set; }
+
     }
 }
